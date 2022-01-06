@@ -1,0 +1,229 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-size: Arial;
+}
+
+main {
+  padding: 3rem;
+}
+
+#container {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    text-align: center;
+}
+
+#container h1 {
+    width: 100%;
+    margin-top: 5%;
+    font-size: 3rem;
+    font-family: Franklin Gothic;
+    font-weight: bold;
+    margin-bottom: 5%;
+}
+
+#container h2 {
+    width: 100%;
+    font-size: 1.5rem;
+    font-family:  Franklin Gothic;
+    font-weight: bolder;
+}
+
+#inscrever {
+    margin-top: 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.inscrever-se {
+    border-radius: 20px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    line-height: 40px;
+    cursor: pointer;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 1rem;
+    color: rgba(53, 53, 53, 0.897);
+}
+
+.inscrever-se:hover {
+    background-color: #E6E6E6;
+}
+
+button img {
+    padding-right: 0.3rem;
+    margin-bottom: -5px;
+}
+
+.ou {
+    margin-left: 1rem;
+    background-color: white;
+    position: relative;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.ou::before { /* line of left  */
+    content: '';
+    width: 8.5rem;
+    height: 1px;
+    left: -9rem;
+    bottom: 7px;
+    position: absolute;
+    background-color: rgb(230, 230, 230);
+}
+
+.ou::after { /* line of right */
+    content: '';
+    width: 7.8rem;
+    height: 1px;
+    left: 1.6rem;
+    bottom: 7px;
+    position: absolute;
+    background-color: rgb(230, 230, 230);
+}
+
+.inscrever-celular {
+    background-color: #1D9BF0;
+    border: 1px solid #1D9BF0;
+    border-radius: 20px;
+    cursor: pointer;
+    font-family: Franklin Gothic;
+    font-size: 0.97rem;
+    color: white;
+    line-height: 40px;
+}
+
+.inscrever-celular:hover {
+    background-color: #1a8cd8;
+}
+
+.inscrever-se, .inscrever-celular, .entrar {
+    width: 300px;
+}
+
+.termos-de-servicos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.termos-de-servicos p {
+    width:300px;
+    font-size: 0.7rem;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 0.5rem;
+}
+
+.termos-de-servicos a {
+    text-decoration: none;
+    color: #1D9BF0;
+}
+
+.termos-de-servicos a:hover {
+    text-decoration: underline;
+}
+
+.tem-conta {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    margin-top: 15%;
+    padding: 1rem;
+}
+
+.entrar {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    cursor: pointer;
+    font-family: Franklin Gothic;
+    font-size: 0.97rem;
+    color: #1D9BF0;
+    line-height: 40px;
+}
+
+.entrar:hover {
+    background-color: #E8F5FE;
+}
+
+footer {
+    background-image: url(imagens/back-logo.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 100%;
+    max-height: 450px;
+    text-align: center;
+}
+
+footer img {
+    padding: 1rem;
+    position: relative;
+    max-width: 22%;
+}
+
+.back-left {
+    display: none;
+}
+
+    @media (min-width: 1001px) {
+
+        #container-pai {
+            display: flex;
+            flex-direction: row;
+            padding: 0;
+            gap: 2.2rem;
+        }
+
+        #container {
+            margin-top: 4%;
+            gap: 0.5rem;
+            flex: 1;
+        }
+        
+        #container h1 {
+            font-size: 3.5rem;
+        }
+
+        #container h2 {
+            font-size: 1.7rem;
+        }
+
+        .titulos {
+            max-width: 100%;
+        }
+
+        .titulos h2 {
+            text-align: center;
+        }
+
+        #inscrever {
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+        }
+
+        .tem-conta {
+            margin-top: 7%;
+            margin-bottom: 2%;
+        }
+
+        .back-left {
+            background-image: url(imagens/back-logo.png);
+            width: 44%;
+            height: 110vh;
+            text-align: center;
+            display: block;
+        }
+
+        .back-left img {
+            margin-top: 35%;
+            max-width: 100%;
+        }
+
+        footer {
+            display: none;
+        }
+    }
